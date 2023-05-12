@@ -1,0 +1,222 @@
+Script started on 2021-10-16 17:06:50+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="82" LINES="41"]
+[?2004h[0;31m┌─[[0;39mcyberider[01;33m@[01;96mkali[0;31m]─[[0;32m~/Desktop/chetu[0;31m]
+[0;31m└──╼ [0m[01;33m$[0mservice mysql restart
+[?2004l[?2004h[0;31m┌─[[0;39mcyberider[01;33m@[01;96mkali[0;31m]─[[0;32m~/Desktop/chetu[0;31m]
+[0;31m└──╼ [0m[01;33m$[0mmysql -u root -p
+[?2004lEnter password: 
+ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+(B[0;7m(B[m[?2004h[0;31m┌─[[0;31m✗[0;37m]─[[0;39mcyberider[01;33m@[01;96mkali[0;31m]─[[0;32m~/Desktop/chetu[0;31m]
+[0;31m└──╼ [0m[01;33m$[0mmysql -u root -p[1@s[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[sudo] password for cyberider: 
+Enter password: 
+(B[0;1mWelcome to the MariaDB monitor.  Commands end with ; or \g.
+(B[m(B[0;1mYour MariaDB connection id is 39
+Server version: 10.3.22-MariaDB-1 Debian buildd-unstable
+
+(B[m(B[0;1mCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+(B[m(B[0;1mType 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+(B[m[?1034hMariaDB [(none)]> show databses;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'databses' at line 1
+(B[0;7m(B[mMariaDB [(none)]> show databses;ases;
++--------------------+
+| Database           |
++--------------------+
+| company            |
+| dvwa               |
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+(B[0;1m5 rows in set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> create database chetu;
+(B[0;1mQuery OK, 1 row affected (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> use [K[K[K[Kcreate database chetu;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pshow databases;
++--------------------+
+| Database           |
++--------------------+
+| chetu              |
+| company            |
+| dvwa               |
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+(B[0;1m6 rows in set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> drop dataabse chetu;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'dataabse chetu' at line 1
+(B[0;7m(B[mMariaDB [(none)]> drop dataabse chetu;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pshow databases;
++--------------------+
+| Database           |
++--------------------+
+| chetu              |
+| company            |
+| dvwa               |
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+(B[0;1m6 rows in set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> show databases;drop dataabse chetu;[1P[C[1@a
+(B[0;1mQuery OK, 0 rows affected (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> drop database chetu;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pshow databases;
++--------------------+
+| Database           |
++--------------------+
+| company            |
+| dvwa               |
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+(B[0;1m5 rows in set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> show databases;drop database chetu;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pshow databases;drop dataabse chetu;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pshow databases;create database chetu;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pshow databases;create database chetu;
+(B[0;1mQuery OK, 1 row affected (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> use chetu;
+(B[0;1mDatabase changed
+(B[mMariaDB [chetu]> create table emp()e)n)o) )i)n)t),)e)n)a)m)e) )v)a)r)c)h)a)r)()[C)5))[C[C;
+(B[0;1mQuery OK, 0 rows affected (0.243 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> desc chetu;
+ERROR 1146 (42S02): Table 'chetu.chetu' doesn't exist
+(B[0;7m(B[mMariaDB [chetu]> desc chetu;[1P;[1P;[1P;[1P;[1P;e;m;p;
++-------+------------+------+-----+---------+-------+
+| Field | Type       | Null | Key | Default | Extra |
++-------+------------+------+-----+---------+-------+
+| eno   | int(11)    | YES  |     | NULL    |       |
+| ename | varchar(5) | YES  |     | NULL    |       |
++-------+------------+------+-----+---------+-------+
+(B[0;1m2 rows in set (0.003 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> drop table w[Kemp;
+(B[0;1mQuery OK, 0 rows affected (0.174 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> drop table emp;[6Pesc[C[C[C[C[C
+ERROR 1146 (42S02): Table 'chetu.emp' doesn't exist
+(B[0;7m(B[mMariaDB [chetu]> desc emp;[6@rop table[C[C[C[C[C[6Pesc[C[C[C[C[Cchetu;create table emp(eno int,ename varchar(5));
+(B[0;1mQuery OK, 0 rows affected (0.236 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> alter table emp add column age float;
+(B[0;1mQuery OK, 0 rows affected (0.441 sec)
+(B[m(B[0;1mRecords: 0  Duplicates: 0  Warnings: 0
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> alter table emp add column age float;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccreate table emp(eno int,ename varchar(5));[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdesc emp;[K
++-------+------------+------+-----+---------+-------+
+| Field | Type       | Null | Key | Default | Extra |
++-------+------------+------+-----+---------+-------+
+| eno   | int(11)    | YES  |     | NULL    |       |
+| ename | varchar(5) | YES  |     | NULL    |       |
+| age   | float      | YES  |     | NULL    |       |
++-------+------------+------+-----+---------+-------+
+(B[0;1m3 rows in set (0.002 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> alter table emp modify ename varchar()1)5)[C;
+(B[0;1mQuery OK, 0 rows affected (0.060 sec)
+(B[m(B[0;1mRecords: 0  Duplicates: 0  Warnings: 0
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> alter table emp modify ename varchar(15);[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdesc emp;[K
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| eno   | int(11)     | YES  |     | NULL    |       |
+| ename | varchar(15) | YES  |     | NULL    |       |
+| age   | float       | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+(B[0;1m3 rows in set (0.002 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> desc emp;alter table emp modify ename varchar(15);[1P[1P[1P[1P[1P[1P[1@c[1@h[1@a[1@n[1@g[1@e[C[C[C[C[C[C5 varchar(15);~ varchar(15);5 varchar(15);~ varchar(15);[1P varchar(15);[1P varchar(15);[1P varchar(15);[1Pvarchar(15);[1Parchar(15);[1Prchar(15);[1Pchar(15);[1Phar(15);[1Par(15);[1Pr(15);[1P(15);[1P15);[1P5);[1P);[1P;[1P;[1P;[1P;[1P;[1P;[1P;a;g;e; ;a;g;e;2;f;l;o;a;t;[C
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+(B[0;7m(B[mMariaDB [chetu]> alter table emp change age age2float;[C age2float;t age2float;o age2float;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'to age2float' at line 1
+(B[0;7m(B[mMariaDB [chetu]> alter table emp change age to age2float;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kalter table emp change age to age2float; float;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kalter table emp change age to age2 float;[1P[1P
+(B[0;1mQuery OK, 0 rows affected (0.063 sec)
+(B[m(B[0;1mRecords: 0  Duplicates: 0  Warnings: 0
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> alter table emp change age  age2 float;to age2float;[3Page2float;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdesc emp;[K
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| eno   | int(11)     | YES  |     | NULL    |       |
+| ename | varchar(15) | YES  |     | NULL    |       |
+| age2  | float       | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+(B[0;1m3 rows in set (0.002 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> insert into emp1[K values();1);0);2);,);');');a');k');a');s');h');[C,);n);u);l);l);[C[C
+(B[0;1mQuery OK, 1 row affected (0.661 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> insert into emp values(102,'akash',null);[1P,'akash',null);1,'akash',null);[C[C[C[C[C[C[C[1P',null);[1P',null);[1P',null);[1P',null);s',null);h',null);i',null);s',null);h',null);[C[C[C[C[C[C[C[C[1P);[1P);[1P);[1P);2);8);.);9);[C[C
+(B[0;1mQuery OK, 1 row affected (0.056 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> insert into emp()e)n)o)[C values()1)0)3)[C;
+(B[0;1mQuery OK, 1 row affected (0.063 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> selct[Cect[C[C * from emp;
++------+--------+------+
+| eno  | ename  | age2 |
++------+--------+------+
+|  102 | akash  | NULL |
+|  101 | ashish | 28.9 |
+|  103 | NULL   | NULL |
++------+--------+------+
+(B[0;1m3 rows in set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> commit;
+(B[0;1mQuery OK, 0 rows affected (0.000 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> update emp set age2 [K=23 where eno=102;
+(B[0;1mQuery OK, 1 row affected (0.338 sec)
+(B[m(B[0;1mRows matched: 1  Changed: 1  Warnings: 0
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> update emp set age2=23 where eno=102;[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit;[Kselect * from emp;
++------+--------+------+
+| eno  | ename  | age2 |
++------+--------+------+
+|  102 | akash  |   23 |
+|  101 | ashish | 28.9 |
+|  103 | NULL   | NULL |
++------+--------+------+
+(B[0;1m3 rows in set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> delete from emp;
+(B[0;1mQuery OK, 3 rows affected (0.440 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> delete from emp;[2@select *[C[C[C[C[C[C[C[C[C[C
+(B[0;1mEmpty set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> drop table emp;
+(B[0;1mQuery OK, 0 rows affected (0.196 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> show tables;
+(B[0;1mEmpty set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [chetu]> drop databsease[C[C chetu;
+(B[0;1mQuery OK, 0 rows affected (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> show databses;ases;[C[C[C[C
++--------------------+
+| Database           |
++--------------------+
+| company            |
+| dvwa               |
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+(B[0;1m5 rows in set (0.001 sec)
+(B[m(B[0;1m
+(B[mMariaDB [(none)]> exit
+(B[0;1mBye
+(B[m[?2004h[0;31m┌─[[0;39mcyberider[01;33m@[01;96mkali[0;31m]─[[0;32m~/Desktop/chetu[0;31m]
+[0;31m└──╼ [0m[01;33m$[0mexit
+[?2004lexit
+
+Script done on 2021-10-16 17:19:40+05:30 [COMMAND_EXIT_CODE="0"]
